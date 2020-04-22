@@ -1,2 +1,1 @@
-# pubs
-public pages for smrgo.com
+pubs.smrgo.com
