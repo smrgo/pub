@@ -1,1 +1,1 @@
-pubs.smrgo.com
+pub.smrgo.com
