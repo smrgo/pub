@@ -1,0 +1,86 @@
+/********** 重置浏览器CSS **********/
+/* 防止用户自定义背景颜色对网页的影响 */
+html{color:#000;background:#F0F0F0;}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+/* 要注意表单元素并不继续父级 font 的问题 */
+body,button,input,select,textarea{font-size:16px; line-height:1.2;}
+input,select,textarea{font-size:inherit;font-family:inherit;font-weight:inherit;}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{border-collapse:collapse;border-spacing:0;}
+/* IE bug fixed: th 不继承 text-align*/
+th{text-align:inherit;}
+/* 去除默认边框 */
+fieldset,img,a img{border:0;}
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{display:block;}
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym{border:0;font-variant:normal;}
+/* 一致的 del 样式 */
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:normal;}
+/* 去掉列表前的标识, li 会继承 */
+/* ol,ul {list-style:none;} */
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th{text-align:left;}
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+/* 统一上标和下标 */
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+/* 清理浮动 */
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{zoom:1; /* for IE6 IE7 */}
+/* 隐藏, 通常用来与 JS 配合 */
+body .hide{display:none;}
+/* 设置内联, 减少浮动带来的bug */
+.left,.right{display:inline;}
+.left{float:left;}
+.right{float:right;}
+
+/*********** 基础设置 **********/
+body {font-family: "Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;font-size:16px;background:#F0F0F0}
+a {color:#4A75B5;text-decoration:none;outline:none;}
+a:hover {color:#CC3333;text-decoration:underline}
+a.external {padding-right:13px;background:url('/media/images/siteimg/icons.gif') no-repeat right 1px;}
+a.external:hover {background-position:right -14px;}
+h1,h2,h3{padding:0.5em 0;}
+h1 {font-size:1.3em;font-weight:bold;}
+h1 a {font-size:1.3em;font-weight:bold;}
+h1 a:hover {text-decoration:none;}
+h2 {font-size:1.15em;font-weight:bold;}
+h3,h4,h5,h6 {font-weight:bold;}
+p {padding:0.5em 0;line-height:25px;}
+li {padding:0.2em 0;}
+ol,ul,dl {margin-left:1.2em;}
+ol ul,ul ol,ul ul,ol ol {margin-left:1em;}
+code {margin:0 0.3em;background:#DDDDDD;border:1px solid #999999;padding:0 5px;font-family:"Courier";font-size:14px;}
+pre {background-color:#000;padding:15px;overflow:auto;margin-bottom:20px;font-size:14px;border: 1px solid #eee;border-radius: 4px 4px 4px 4px;color:#b9bdb6;line-height:1.3em;}
+pre code{background-color:transparent;border:none;padding:0;margin:0;}
+pre ol{margin-left:25px;list-style-type:decimal;}
+hr{margin:0.7em 0;border-top:1px dashed #D0D0D0;border-bottom:1px dashed #F9F9F9;}
+blockquote{display:block;text-align:justify;border-left:4px solid #999999;}
+blockquote{margin:1em 0em;padding-left:1.5em;}
+blockquote p{margin:0;padding:.5em 0;}
+em{color:#CC3333;}
+
+
+/************ 布局设置 *****************/
+#header {text-align: center;font-size: 2em;padding: 1em;}
+
+#footer {clear: both;text-align: center;padding: 1em;}
+
+#right-sidebar {width: 200px;margin-left: -100%;float: right;}
+
+#left-sidebar {width: 200px;float: left;position: relative;z-index: 2;}
+
+#content {float: left;width: 100%;box-sizing: border-box;padding-right: 200px;margin-left: -200px;padding-left: 200px;font-size: 18px;}
+#content p {line-height: 1.5em;}
+
+#inner-content p{text-indent: 2em;}
+.indentlist li{margin-left: 2em;}
+
+#inner-right-content, #inner-left-content{width: 100%;text-align: center; width:50%;}#inner-right-content{float: right;}
